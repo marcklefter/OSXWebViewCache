@@ -30,6 +30,8 @@ It expands upon the concepts and code in [this](https://www.raywenderlich.com/59
     [NSURLProtocol registerClass:[CachedURLProtocol class]];
     ```
 
+The cache utilizes Core Data and the database is stored in the directory ~/Library/[your application's bundle identifier].
+
 Also see the Driver sample application for more details.
 
 ### License
