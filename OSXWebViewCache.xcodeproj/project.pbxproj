@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4D3300C61CAD5E80007B244C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3300C51CAD5E80007B244C /* AppDelegate.m */; };
+		4D3300C91CAD5E80007B244C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3300C81CAD5E80007B244C /* main.m */; };
+		4D3300CB1CAD5E80007B244C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D3300CA1CAD5E80007B244C /* Assets.xcassets */; };
+		4D3300CE1CAD5E80007B244C /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D3300CC1CAD5E80007B244C /* MainWindow.xib */; };
+		4D3300ED1CAD6092007B244C /* OSXWebViewCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D3300EC1CAD6092007B244C /* OSXWebViewCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4D3300F11CAD6092007B244C /* OSXWebViewCache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D3300EA1CAD6092007B244C /* OSXWebViewCache.framework */; };
+		4D3300F21CAD6092007B244C /* OSXWebViewCache.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4D3300EA1CAD6092007B244C /* OSXWebViewCache.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4D3300F81CAD6146007B244C /* CachedURLModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4D3300F61CAD6146007B244C /* CachedURLModel.xcdatamodeld */; };
+		4D3301151CAD6285007B244C /* CachedURL+CoreDataProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D3301111CAD6285007B244C /* CachedURL+CoreDataProperties.h */; };
+		4D3301161CAD6285007B244C /* CachedURL+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3301121CAD6285007B244C /* CachedURL+CoreDataProperties.m */; };
+		4D3301171CAD6285007B244C /* CachedURL.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D3301131CAD6285007B244C /* CachedURL.h */; };
+		4D3301181CAD6285007B244C /* CachedURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3301141CAD6285007B244C /* CachedURL.m */; };
+		4D33011B1CAD6304007B244C /* CachedURLProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D3301191CAD6304007B244C /* CachedURLProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4D33011C1CAD6304007B244C /* CachedURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D33011A1CAD6304007B244C /* CachedURLProtocol.m */; };
+		4D3301211CADA4CE007B244C /* GCNetworkReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D33011F1CADA4CE007B244C /* GCNetworkReachability.h */; };
+		4D3301221CADA4CE007B244C /* GCNetworkReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3301201CADA4CE007B244C /* GCNetworkReachability.m */; };
+		4D3301251CADA593007B244C /* OSXWebViewCacheHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D3301231CADA593007B244C /* OSXWebViewCacheHelper.h */; };
+		4D3301261CADA593007B244C /* OSXWebViewCacheHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3301241CADA593007B244C /* OSXWebViewCacheHelper.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4D3300EF1CAD6092007B244C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4D3300411CAD4310007B244C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D3300E91CAD6092007B244C;
+			remoteInfo = OSXWebViewCache;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4D3300E41CAD5FF3007B244C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4D3300F21CAD6092007B244C /* OSXWebViewCache.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4D3300C21CAD5E80007B244C /* Driver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Driver.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D3300C41CAD5E80007B244C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4D3300C51CAD5E80007B244C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4D3300C81CAD5E80007B244C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4D3300CA1CAD5E80007B244C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4D3300CD1CAD5E80007B244C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		4D3300CF1CAD5E80007B244C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D3300EA1CAD6092007B244C /* OSXWebViewCache.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OSXWebViewCache.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D3300EC1CAD6092007B244C /* OSXWebViewCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSXWebViewCache.h; sourceTree = "<group>"; };
+		4D3300EE1CAD6092007B244C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D3300F71CAD6146007B244C /* CachedURLModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CachedURLModel.xcdatamodel; sourceTree = "<group>"; };
+		4D3301111CAD6285007B244C /* CachedURL+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CachedURL+CoreDataProperties.h"; sourceTree = "<group>"; };
+		4D3301121CAD6285007B244C /* CachedURL+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CachedURL+CoreDataProperties.m"; sourceTree = "<group>"; };
+		4D3301131CAD6285007B244C /* CachedURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CachedURL.h; sourceTree = "<group>"; };
+		4D3301141CAD6285007B244C /* CachedURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CachedURL.m; sourceTree = "<group>"; };
+		4D3301191CAD6304007B244C /* CachedURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CachedURLProtocol.h; sourceTree = "<group>"; };
+		4D33011A1CAD6304007B244C /* CachedURLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CachedURLProtocol.m; sourceTree = "<group>"; };
+		4D33011F1CADA4CE007B244C /* GCNetworkReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCNetworkReachability.h; sourceTree = "<group>"; };
+		4D3301201CADA4CE007B244C /* GCNetworkReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCNetworkReachability.m; sourceTree = "<group>"; };
+		4D3301231CADA593007B244C /* OSXWebViewCacheHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSXWebViewCacheHelper.h; sourceTree = "<group>"; };
+		4D3301241CADA593007B244C /* OSXWebViewCacheHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSXWebViewCacheHelper.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4D3300BF1CAD5E80007B244C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D3300F11CAD6092007B244C /* OSXWebViewCache.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D3300E61CAD6092007B244C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4D3300401CAD4310007B244C = {
+			isa = PBXGroup;
+			children = (
+				4D3300C31CAD5E80007B244C /* Driver */,
+				4D3300EB1CAD6092007B244C /* OSXWebViewCache */,
+				4D33004C1CAD44A7007B244C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4D33004C1CAD44A7007B244C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4D3300C21CAD5E80007B244C /* Driver.app */,
+				4D3300EA1CAD6092007B244C /* OSXWebViewCache.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4D3300C31CAD5E80007B244C /* Driver */ = {
+			isa = PBXGroup;
+			children = (
+				4D3300C41CAD5E80007B244C /* AppDelegate.h */,
+				4D3300C51CAD5E80007B244C /* AppDelegate.m */,
+				4D3300CA1CAD5E80007B244C /* Assets.xcassets */,
+				4D3300CC1CAD5E80007B244C /* MainWindow.xib */,
+				4D3300CF1CAD5E80007B244C /* Info.plist */,
+				4D3300C71CAD5E80007B244C /* Supporting Files */,
+			);
+			path = Driver;
+			sourceTree = "<group>";
+		};
+		4D3300C71CAD5E80007B244C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4D3300C81CAD5E80007B244C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4D3300EB1CAD6092007B244C /* OSXWebViewCache */ = {
+			isa = PBXGroup;
+			children = (
+				4D33011D1CADA4CE007B244C /* Dependencies */,
+				4D3301131CAD6285007B244C /* CachedURL.h */,
+				4D3301141CAD6285007B244C /* CachedURL.m */,
+				4D3301111CAD6285007B244C /* CachedURL+CoreDataProperties.h */,
+				4D3301121CAD6285007B244C /* CachedURL+CoreDataProperties.m */,
+				4D3300F61CAD6146007B244C /* CachedURLModel.xcdatamodeld */,
+				4D3301191CAD6304007B244C /* CachedURLProtocol.h */,
+				4D33011A1CAD6304007B244C /* CachedURLProtocol.m */,
+				4D3300EE1CAD6092007B244C /* Info.plist */,
+				4D3300EC1CAD6092007B244C /* OSXWebViewCache.h */,
+				4D3301231CADA593007B244C /* OSXWebViewCacheHelper.h */,
+				4D3301241CADA593007B244C /* OSXWebViewCacheHelper.m */,
+			);
+			path = OSXWebViewCache;
+			sourceTree = "<group>";
+		};
+		4D33011D1CADA4CE007B244C /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				4D33011E1CADA4CE007B244C /* GCNetworkReachability */,
+			);
+			path = Dependencies;
+			sourceTree = "<group>";
+		};
+		4D33011E1CADA4CE007B244C /* GCNetworkReachability */ = {
+			isa = PBXGroup;
+			children = (
+				4D33011F1CADA4CE007B244C /* GCNetworkReachability.h */,
+				4D3301201CADA4CE007B244C /* GCNetworkReachability.m */,
+			);
+			path = GCNetworkReachability;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4D3300E71CAD6092007B244C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D3301251CADA593007B244C /* OSXWebViewCacheHelper.h in Headers */,
+				4D3301151CAD6285007B244C /* CachedURL+CoreDataProperties.h in Headers */,
+				4D3301211CADA4CE007B244C /* GCNetworkReachability.h in Headers */,
+				4D33011B1CAD6304007B244C /* CachedURLProtocol.h in Headers */,
+				4D3301171CAD6285007B244C /* CachedURL.h in Headers */,
+				4D3300ED1CAD6092007B244C /* OSXWebViewCache.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4D3300C11CAD5E80007B244C /* Driver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D3300D01CAD5E80007B244C /* Build configuration list for PBXNativeTarget "Driver" */;
+			buildPhases = (
+				4D3300BE1CAD5E80007B244C /* Sources */,
+				4D3300BF1CAD5E80007B244C /* Frameworks */,
+				4D3300C01CAD5E80007B244C /* Resources */,
+				4D3300E41CAD5FF3007B244C /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4D3300F01CAD6092007B244C /* PBXTargetDependency */,
+			);
+			name = Driver;
+			productName = Driver;
+			productReference = 4D3300C21CAD5E80007B244C /* Driver.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4D3300E91CAD6092007B244C /* OSXWebViewCache */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D3300F31CAD6092007B244C /* Build configuration list for PBXNativeTarget "OSXWebViewCache" */;
+			buildPhases = (
+				4D3300E51CAD6092007B244C /* Sources */,
+				4D3300E61CAD6092007B244C /* Frameworks */,
+				4D3300E71CAD6092007B244C /* Headers */,
+				4D3300E81CAD6092007B244C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OSXWebViewCache;
+			productName = OSXWebViewCache;
+			productReference = 4D3300EA1CAD6092007B244C /* OSXWebViewCache.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4D3300411CAD4310007B244C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				TargetAttributes = {
+					4D3300C11CAD5E80007B244C = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					4D3300E91CAD6092007B244C = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 4D3300441CAD4310007B244C /* Build configuration list for PBXProject "OSXWebViewCache" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4D3300401CAD4310007B244C;
+			productRefGroup = 4D33004C1CAD44A7007B244C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4D3300C11CAD5E80007B244C /* Driver */,
+				4D3300E91CAD6092007B244C /* OSXWebViewCache */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4D3300C01CAD5E80007B244C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D3300CB1CAD5E80007B244C /* Assets.xcassets in Resources */,
+				4D3300CE1CAD5E80007B244C /* MainWindow.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D3300E81CAD6092007B244C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4D3300BE1CAD5E80007B244C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D3300C91CAD5E80007B244C /* main.m in Sources */,
+				4D3300C61CAD5E80007B244C /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D3300E51CAD6092007B244C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D3300F81CAD6146007B244C /* CachedURLModel.xcdatamodeld in Sources */,
+				4D3301221CADA4CE007B244C /* GCNetworkReachability.m in Sources */,
+				4D3301181CAD6285007B244C /* CachedURL.m in Sources */,
+				4D3301261CADA593007B244C /* OSXWebViewCacheHelper.m in Sources */,
+				4D3301161CAD6285007B244C /* CachedURL+CoreDataProperties.m in Sources */,
+				4D33011C1CAD6304007B244C /* CachedURLProtocol.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4D3300F01CAD6092007B244C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4D3300E91CAD6092007B244C /* OSXWebViewCache */;
+			targetProxy = 4D3300EF1CAD6092007B244C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4D3300CC1CAD5E80007B244C /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4D3300CD1CAD5E80007B244C /* Base */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4D3300451CAD4310007B244C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		4D3300461CAD4310007B244C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		4D3300D11CAD5E80007B244C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Driver/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.remotifi.osxwebviewcache.Driver;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		4D3300D21CAD5E80007B244C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Driver/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.remotifi.osxwebviewcache.Driver;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		4D3300F41CAD6092007B244C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = OSXWebViewCache/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.remotifi.osxwebviewcache.OSXWebViewCache;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4D3300F51CAD6092007B244C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = OSXWebViewCache/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.remotifi.osxwebviewcache.OSXWebViewCache;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4D3300441CAD4310007B244C /* Build configuration list for PBXProject "OSXWebViewCache" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D3300451CAD4310007B244C /* Debug */,
+				4D3300461CAD4310007B244C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D3300D01CAD5E80007B244C /* Build configuration list for PBXNativeTarget "Driver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D3300D11CAD5E80007B244C /* Debug */,
+				4D3300D21CAD5E80007B244C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D3300F31CAD6092007B244C /* Build configuration list for PBXNativeTarget "OSXWebViewCache" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D3300F41CAD6092007B244C /* Debug */,
+				4D3300F51CAD6092007B244C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4D3300F61CAD6146007B244C /* CachedURLModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4D3300F71CAD6146007B244C /* CachedURLModel.xcdatamodel */,
+			);
+			currentVersion = 4D3300F71CAD6146007B244C /* CachedURLModel.xcdatamodel */;
+			path = CachedURLModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4D3300411CAD4310007B244C /* Project object */;
+}

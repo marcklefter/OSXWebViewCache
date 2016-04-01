@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Driver.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>OSXWebViewCache.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>4D33004A1CAD44A7007B244C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4D33006E1CAD5A20007B244C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4D3300871CAD5ADA007B244C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4D3300AC1CAD5BBD007B244C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4D3300C11CAD5E80007B244C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4D3300D71CAD5FF3007B244C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4D3300E91CAD6092007B244C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
