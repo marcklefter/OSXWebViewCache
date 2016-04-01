@@ -5,7 +5,8 @@
 
 #import "AppDelegate.h"
 
-#define kWebViewUrl @"http://localhost:8081/src/index.html"
+// NOTE: Change this to a domain of your choice.
+#define kWebViewUrl @"http://example.com/index.html"
 
 @interface AppDelegate () <WebUIDelegate>
 
@@ -32,7 +33,9 @@
     // ...
     
     // enable URL caching for selected domains.
-    [CachedURLProtocol setDomains:@[@"http://localhost:8081"]];
+    //
+    // NOTE: Change this to a domain of your choice.
+    [CachedURLProtocol setDomains:@[@"http://example.com"]];
     [NSURLProtocol registerClass:[CachedURLProtocol class]];
     
     [[NSNotificationCenter defaultCenter] addObserver:self
